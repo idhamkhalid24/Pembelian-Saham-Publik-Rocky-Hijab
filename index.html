@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pembelian Lot Saham Publik - Rocky Hijab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  
+  <div id="loading" class="loading-overlay">
+    <div class="spinner"></div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <div id="app">
+    <div class="dashboard">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; flex-wrap: wrap; gap: 16px;">
+        <div>
+          <h1 class="text-primary mb-1">INVESTASI DI ROCKY HIJAB</h1>
+          <div class="text-muted">Investasi gak Harus Punya Uang Banyak</div>
+        </div>
+        <a href="https://wa.me/6285172107731?text=Halo%20Admin,%20saya%20mau%20bertanya%20seputar%20investasi%20lot%20saham." target="_blank" class="btn" style="background:#25D366; color:#FFF; border-color:#000;">
+          <i class="fab fa-whatsapp" style="font-size:1.2rem;"></i> Hubungi CS
+        </a>
+      </div>
+      
+      <div id="catalog-container"></div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://app.midtrans.com/snap/snap.js" data-client-key="Mid-client-QZZUlxu3GpoxkPHt"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
