@@ -121,8 +121,10 @@ function renderCatalog() {
           <div><div class="stat-label" style="font-size:0.75rem;">Lot Terjual</div><div style="font-weight:900;font-size:1.1rem;">${c.lots_sold} / ${c.max_lots}</div></div>
         </div>
         
-        <div style="background:var(--bg-body);border-radius:999px;height:12px;margin-bottom:16px;overflow:hidden;border:2px solid var(--border);">
-          <div style="height:100%;width:${pct}%;background:var(--text-main);border-radius:999px;transition:width 0.4s;"></div>
+        <div style="background:var(--bg-body);border-radius:999px;height:12px;margin-bottom:20px;border:2px solid var(--border); position:relative; overflow:visible;">
+          <div style="height:100%;width:${pct}%;background:#FF2424;border-radius:999px;transition:width 0.4s; position:relative;">
+            ${pct > 0 ? '<span style="position:absolute; right:-10px; bottom:-2px; font-size:22px; line-height:1; z-index:10; filter: drop-shadow(1px 1px 0px rgba(0,0,0,0.5));">🔥</span>' : ''}
+          </div>
         </div>
         
         ${investorHtml}
